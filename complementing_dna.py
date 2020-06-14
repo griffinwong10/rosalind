@@ -64,15 +64,20 @@ ACCGGGTTTT '''
 
 
 
+# 
+#
+
 def reverse_complement(raw_input):
 
 	# example dictionary
     map_dict = {"A": "T", "T": "A", "C": "G","G": "C"}
 
     # Create a complementary dictionary
+    # https://www.programiz.com/python-programming/methods/string/maketrans
     complement_table = (raw_input.maketrans(map_dict))
     
     # Create a complementary string and reverse the string
+    # https://www.programiz.com/python-programming/methods/string/translate
     complement_string = ((raw_input.translate(complement_table)))
     
     # Create a reversed complementary string
