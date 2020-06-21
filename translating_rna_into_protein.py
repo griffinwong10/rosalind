@@ -79,8 +79,7 @@ def read_data(filename: str):
         string = fp.readline().replace('\n', '')
     return (string)
 
-# https://stackoverflow.com/questions/23372512/rosalind-
-#   translating-rna-into-protein-python
+# translating-rna-into-protein-python
 def rna2prot(rna):
     rna = Seq(rna, IUPAC.unambiguous_rna)
     return str(rna.translate(to_stop=True))
